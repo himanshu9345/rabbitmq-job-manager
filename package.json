@@ -1,0 +1,23 @@
+{
+  "name": "rabbitmq-job-manager",
+  "version": "1.0.0",
+  "description": "Learning Rabbitmq",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu9345/rabbitmq-job-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshu9345/rabbitmq-job-manager/issues"
+  },
+  "homepage": "https://github.com/himanshu9345/rabbitmq-job-manager#readme",
+  "dependencies": {
+    "amqplib": "^0.6.0"
+  }
+}
