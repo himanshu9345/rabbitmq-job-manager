@@ -2,7 +2,7 @@ const amqp = require("amqplib");
 
 connect();
 async function connect() {
-  const msgToSend = { number: 19 };
+  const msgToSend = { number: process.argv[2] };
 
   try {
     // connecting to rabbitmq server

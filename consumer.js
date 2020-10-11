@@ -13,7 +13,11 @@ async function connect() {
     // consuming the jobs from a jobsqueue
     channel.consume("myjobsqueue", (message) => {
       var data = JSON.parse(message.content.toString());
-      console.log(`Received jobs with input ${data}`);
+      console.log(`Received jobs with input ${data.number}`);
+      // To remove a job form the queue, we have to send ack msg to server
+      if (data.number == 19) {
+        channel.ack(message);
+      }
     });
   } catch (error) {
     console.log(error);
